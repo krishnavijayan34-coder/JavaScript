@@ -1,0 +1,6 @@
+const printFirstN = (arr, n) => {
+    return arr.slice(0, n);
+};
+
+let arr = [70, 64, 80, 40, 50];
+console.log(printFirstN(arr, 4));
