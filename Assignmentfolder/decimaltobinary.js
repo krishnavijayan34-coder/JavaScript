@@ -1,3 +1,8 @@
-const decimalToBinary = (num) => num.toString(2);
+const decimalToBinary = (num) => {
+    return num.toString(2);
+};
 
-console.log(decimalToBinary(20));
+let number = 10;
+
+console.log("Decimal:", number);
+console.log("Binary:", decimalToBinary(number));
