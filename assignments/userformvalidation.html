@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+
+    <style>
+        body {
+            background-color: #d8cfc7;
+            font-family: Arial;
+        }
+
+        .container {
+            width: 700px;
+            margin: 20px auto;
+            border: 3px solid gray;
+            padding: 10px;
+        }
+
+        .title {
+            background-color: #f5f2a0;
+            color: red;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .left { width: 35%; }
+        .right { width: 65%; }
+
+        input, textarea, select {
+            width: 90%;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<form id="userForm" onsubmit="validateForm(event)">
+
+<div class="container">
+
+    <div class="title">User Form</div>
+
+    <div class="row">
+        <div class="left">Enter Name</div>
+        <div class="right">
+            <input type="text" id="name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Enter Password</div>
+        <div class="right">
+            <input type="password" id="password">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Enter Address</div>
+        <div class="right">
+            <textarea id="address"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Select Game</div>
+        <div class="right">
+            <label><input type="checkbox" class="game"> Hockey</label>
+            <label><input type="checkbox" class="game"> Football</label>
+            <label><input type="checkbox" class="game"> Cricket</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Gender</div>
+        <div class="right">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left">Select Age</div>
+        <div class="right">
+            <select id="age">
+                <option value="">Select</option>
+                <option>18-25</option>
+                <option>26-35</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="file" id="file">
+    </div>
+
+    <div class="row">
+        <button type="submit">Submit</button>
+    </div>
+
+</div>
+
+</form>
+
+<script src="userformvalidation.js"></script>
+
+</body>
+</html>
