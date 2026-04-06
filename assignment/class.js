@@ -12,7 +12,7 @@ class Person {
 
 class Teacher extends Person {
     constructor(id, name, email, subject) {
-        super(id, name, email); // call parent constructor
+        super(id, name, email);
         this.subject = subject;
     }
 
