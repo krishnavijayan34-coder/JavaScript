@@ -22,7 +22,7 @@ function displayCart() {
     list.innerHTML = "";
 
     if (cart) {
-        let items = cart.split(","); // convert string to array
+        let items = cart.split(","); 
         for (let i = 0; i < items.length; i++) {
             let li = document.createElement("li");
             li.innerText = items[i];
