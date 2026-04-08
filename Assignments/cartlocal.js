@@ -1,7 +1,9 @@
 function addToCart() {
     let product = document.getElementById("product").value;
+    console.log(product);
 
     let cart = localStorage.getItem("cart");
+    console.log(cart)
 
     if (cart) {
         cart = cart + "," + product; 
